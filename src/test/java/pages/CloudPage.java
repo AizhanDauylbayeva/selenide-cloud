@@ -20,12 +20,12 @@ public class CloudPage {
     public void createFolder() {
         $(byXpath("//div[@data-group='create']")).click();
         $(byXpath("//span[contains(string(), 'Папку')]")).click();
-        $(byXpath("//button[@data-name=\"add\"]")).click();
+        $(byXpath("//button[@data-name='add']")).click();
     }
 
     public void removeTheNewFolder() {
         $(byXpath("//div[@data-id='/Новая папка']//div[@class='b-checkbox__box']")).click();
-        $(byXpath("//span[@class='b-toolbar__btn__text b-toolbar__btn__text_pad' and contains(string(), 'Удалить')]")).click();
+        $(byXpath("//span[contains(string(), 'Удалить')]")).click();
         $(byXpath("//button[@data-name='remove']")).click();
         $(byXpath("//div[@class='layer__footer']/button[@data-name='close']")).click();
     }
