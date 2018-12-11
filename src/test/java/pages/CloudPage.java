@@ -13,7 +13,7 @@ public class CloudPage {
     }
 
     public PicturesFolderCloudPage openPicturesFolder() {
-        $(byXpath("//div[@data-id='/Pictures']/*[@class='b-thumb__content']")).click();
+        $(byXpath("//div[@data-id='/Pictures']/*[@class='b-thumb__content']")).doubleClick();
         return new PicturesFolderCloudPage();
     }
 
